@@ -13,8 +13,8 @@ public class ClientHandler implements Runnable{
     public ClientHandler(Socket socket){
         try{
             this.socket = socket;
-            this.inputStream = new ObjectInputStream(socket.getInputStream());
             this.outputStream = new ObjectOutputStream(socket.getOutputStream());
+            this.inputStream = new ObjectInputStream(socket.getInputStream());
         } catch(IOException e){
             closeEverything(socket, outputStream, inputStream);
         }
@@ -23,7 +23,7 @@ public class ClientHandler implements Runnable{
     @Override
     public void run(){
         String messageFromClient;
-        while(socket.isConnected()) {
+        while(!socket.isClosed()) {
             broadcastMessage(0, "SERVER: ready");
             int num = 0;
             try {
@@ -50,16 +50,18 @@ public class ClientHandler implements Runnable{
                 }
             }
             broadcastMessage(0,"SERVER: finished");
+
+            closeEverything(socket, outputStream, inputStream);
         }
     }
 
     public void closeEverything(Socket socket, ObjectOutputStream outputStream, ObjectInputStream inputStream){
         try{
-            if (outputStream != null){
-                outputStream.close();
-            }
-            if(inputStream != null){
+            if (inputStream != null){
                 inputStream.close();
+            }
+            if(outputStream != null){
+                outputStream.close();
             } if(socket != null){
                 socket.close();
             }

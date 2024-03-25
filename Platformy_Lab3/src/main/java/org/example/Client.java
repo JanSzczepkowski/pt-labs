@@ -20,36 +20,38 @@ public class Client {
         }
     }
 
-    public void sendMessage(){
+    public synchronized void sendMessage(){
         try {
             Scanner scanner = new Scanner(System.in);
-            while(socket.isConnected()){
-                int n = Integer.parseInt(scanner.nextLine());
-                outputStream.writeObject(new Message(n,""));
-                while(n > 0){
-                    outputStream.flush();
-                    String messageToSend = scanner.nextLine();
-                    outputStream.writeObject(new Message(--n,messageToSend));
-                }
+            int n = Integer.parseInt(scanner.nextLine());
+            outputStream.writeObject(new Message(n,""));
+            for(int i = 0; i < n; i++){
+
+
+                String messageToSend = scanner.nextLine();
+                outputStream.writeObject(new Message(i + 1,messageToSend));
+
             }
         } catch(IOException e){
             closeEverything(socket, outputStream, inputStream);
         }
+        //closeEverything(socket, outputStream, inputStream);
     }
 
     public void receiveMessage(){
         new Thread(new Runnable() {
             @Override
             public void run() {
+
                 Message messageFromServer;
-                while(socket.isConnected()){
+                while(!socket.isClosed()){
                     try{
                         messageFromServer = (Message) inputStream.readObject();
                         System.out.println(messageFromServer.getContent());
                     } catch (ClassNotFoundException e) {
-                        throw new RuntimeException(e);
+                        closeEverything(socket, outputStream, inputStream);
                     } catch (IOException e) {
-                        throw new RuntimeException(e);
+                        closeEverything(socket, outputStream, inputStream);
                     }
                 }
             }
@@ -64,11 +66,12 @@ public class Client {
             if(objectInputStream != null){
                 objectInputStream.close();
             } if(socket != null){
-                socket.close();
+                this.socket.close();
             }
         } catch (IOException e){
             e.printStackTrace();
         }
+
     }
 
     public static void main(String[] args) throws IOException {

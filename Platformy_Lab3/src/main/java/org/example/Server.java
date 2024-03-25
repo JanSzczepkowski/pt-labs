@@ -5,14 +5,14 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Server {
-    private final ServerSocket serverSocket;
+    private ServerSocket serverSocket;
     public Server(ServerSocket serverSocket) {
         this.serverSocket = serverSocket;
     }
 
     public void startServer(){
         try {
-            while(!serverSocket.isClosed()){
+            while(true){
                 Socket socket = serverSocket.accept();
                 ClientHandler clientHandler = new ClientHandler(socket);
                 Thread thred = new Thread(clientHandler);
