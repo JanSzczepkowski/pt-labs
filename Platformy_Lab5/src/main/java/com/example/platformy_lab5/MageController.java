@@ -25,7 +25,7 @@ public class MageController {
     }
     public String save(String name, String level){
         try{
-            repository.save(new Mage(name, Integer.parseInt(level)));
+            repository.save(name, Integer.parseInt(level));
         } catch(IllegalArgumentException e){
             return "bad request";
         }

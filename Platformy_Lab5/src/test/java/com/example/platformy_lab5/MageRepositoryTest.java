@@ -5,6 +5,9 @@ import org.junit.Test;
 
 import java.util.Optional;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+
 
 public class MageRepositoryTest {
 
@@ -15,43 +18,36 @@ public class MageRepositoryTest {
     @Test
     public void testFindExistingMage() {
         mageRepository = new MageRepository();
-        Mage mage = new Mage("Jan", 7);
-        mageRepository.save(mage);
+
+        mageRepository.save("Jan", 7);
 
         Optional<Mage> foundMage = mageRepository.find("Jan");
-        Assert.assertTrue(foundMage.isPresent());
-        Assert.assertEquals("Jan", foundMage.get().getName());
-        Assert.assertEquals(7, foundMage.get().getLevel());
+        assertEquals("Jan", foundMage.get().getName());
     }
 
     @Test
     public void testFindNonExistingMage() {
         mageRepository = new MageRepository();
         Optional<Mage> foundMage = mageRepository.find("NonExisting");
-        Assert.assertFalse(foundMage.isPresent());
+        assertFalse(foundMage.isPresent());
     }
 
     @Test
     public void testSave() {
         mageRepository = new MageRepository();
-        Mage mage = new Mage("Kamil", 5);
-        mageRepository.save(mage);
-
+        mageRepository.save("Kamil", 5);
         Optional<Mage> foundMage = mageRepository.find("Kamil");
-        Assert.assertTrue(foundMage.isPresent());
-        Assert.assertEquals("Kamil", foundMage.get().getName());
-        Assert.assertEquals(5, foundMage.get().getLevel());
+        assertEquals("Kamil", foundMage.get().getName());
     }
 
     @Test
     public void testDeleteExistingMage() {
         mageRepository = new MageRepository();
-        Mage mage = new Mage("Adam", 3);
-        mageRepository.save(mage);
+        mageRepository.save("Adam", 3);
 
         mageRepository.delete("Adam");
         Optional<Mage> foundMage = mageRepository.find("Adam");
-        Assert.assertFalse(foundMage.isPresent());
+        assertFalse(foundMage.isPresent());
     }
 
     @Test

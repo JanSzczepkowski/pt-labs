@@ -29,10 +29,11 @@ public class MageRepository {
         }
         throw new IllegalArgumentException("Mage not found");
     }
-    public void save(Mage mage){
-        Optional<Mage> mageToAdd = this.find(mage.getName());
+    public void save(String name , int level ){ //String name, int level
+        Mage mage = new Mage(name, level);
+        Optional<Mage> mageToAdd = this.find(name);
         if(mageToAdd.isPresent()){
-            throw new IllegalArgumentException("Mage named " + mage.getName() + " already in repository");
+            throw new IllegalArgumentException("Mage named " + name + " already in repository");
         } else {
             collection.add(mage);
         }
