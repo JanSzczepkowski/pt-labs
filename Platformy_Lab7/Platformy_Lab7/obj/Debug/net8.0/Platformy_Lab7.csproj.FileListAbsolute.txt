@@ -1,0 +1,15 @@
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\bin\Debug\net8.0\Platformy_Lab7.exe
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\bin\Debug\net8.0\Platformy_Lab7.deps.json
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\bin\Debug\net8.0\Platformy_Lab7.runtimeconfig.json
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\bin\Debug\net8.0\Platformy_Lab7.dll
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\bin\Debug\net8.0\Platformy_Lab7.pdb
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\obj\Debug\net8.0\Platformy_Lab7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\obj\Debug\net8.0\Platformy_Lab7.AssemblyInfoInputs.cache
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\obj\Debug\net8.0\Platformy_Lab7.AssemblyInfo.cs
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\obj\Debug\net8.0\Platformy_Lab7.csproj.CoreCompileInputs.cache
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\obj\Debug\net8.0\Platformy_Lab7.sourcelink.json
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\obj\Debug\net8.0\Platformy_Lab7.dll
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\obj\Debug\net8.0\refint\Platformy_Lab7.dll
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\obj\Debug\net8.0\Platformy_Lab7.pdb
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\obj\Debug\net8.0\Platformy_Lab7.genruntimeconfig.cache
+C:\Users\jasie\IdeaProjects\Platformy_Lab7\Platformy_Lab7\obj\Debug\net8.0\ref\Platformy_Lab7.dll
