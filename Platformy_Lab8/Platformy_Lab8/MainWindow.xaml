@@ -1,0 +1,53 @@
+﻿<Window x:Class="Platformy_Lab8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Platformy_Lab8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Sekcja menu -->
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Open" Click="OpenMenuItem_Click"/>
+                <MenuItem Header="Exit" Click="ExitMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Save" Click="SaveFileContent" />
+
+        </Menu>
+
+        <!-- Sekcja podzielona na pół z drzewem katalogów i zawartością pliku -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Drzewo katalogów -->
+            <TreeView x:Name="treeView" Grid.Column="0">
+                <TreeView.ItemContainerStyle>
+                    <Style TargetType="TreeViewItem">
+                        <!-- Tutaj możesz dodać stylizację dla elementów drzewa -->
+                    </Style>
+                </TreeView.ItemContainerStyle>
+                <!-- Tu możesz umieścić zawartość drzewa, na przykład dynamicznie dodawane elementy -->
+            </TreeView>
+
+            <!-- Zawartość pliku -->
+            <ScrollViewer Grid.Column="1">
+                <TextBox x:Name="fileContentTextBox" TextWrapping="Wrap" AcceptsReturn="True" IsReadOnly="True"/>
+            </ScrollViewer>
+        </Grid>
+        <StatusBar Grid.Row="2" VerticalAlignment="Bottom" Height="20" Margin="0,0,0,5">
+            <StatusBarItem>
+                <TextBlock x:Name="statusTextBlock" Text="Status" />
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>
