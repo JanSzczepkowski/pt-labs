@@ -46,6 +46,25 @@ namespace Platformy_Lab8
                 try
                 {
                     Directory.CreateDirectory(path);
+
+                    // Ustawianie atrybutów dla katalogu
+                    if (isReadOnly || isArchive || isSystem || isHidden)
+                    {
+                        DirectoryInfo dirInfo = new DirectoryInfo(path);
+                        FileAttributes attributes = dirInfo.Attributes;
+
+                        if (isReadOnly)
+                            attributes |= FileAttributes.ReadOnly;
+                        if (isArchive)
+                            attributes |= FileAttributes.Archive;
+                        if (isSystem)
+                            attributes |= FileAttributes.System;
+                        if (isHidden)
+                            attributes |= FileAttributes.Hidden;
+
+                        dirInfo.Attributes = attributes;
+                    }
+
                     System.Windows.Forms.MessageBox.Show("Directory created successfully.");
                     (System.Windows.Application.Current.MainWindow as MainWindow).UpdateTreeView(path, parentItem);
                     Close();
@@ -83,7 +102,9 @@ namespace Platformy_Lab8
             }
         }
 
-            private bool ValidateFileName(string fileName)
+
+
+        private bool ValidateFileName(string fileName)
         {
             string pattern = @"^[a-zA-Z0-9_~.-]{1,8}\.(txt|php|html)$";
             return Regex.IsMatch(fileName, pattern);

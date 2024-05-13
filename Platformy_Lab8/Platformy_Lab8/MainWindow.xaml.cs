@@ -187,29 +187,56 @@ namespace Platformy_Lab8
         {
             try
             {
-                FileAttributes attributes = File.GetAttributes(path);
-
                 string statusText = "";
 
-                if ((attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly)
-                    statusText += "r";
-                else
-                    statusText += "-";
+                if (File.Exists(path))
+                {
+                    FileAttributes fileAttributes = File.GetAttributes(path);
 
-                if ((attributes & FileAttributes.Archive) == FileAttributes.Archive)
-                    statusText += "a";
-                else
-                    statusText += "-";
+                    if ((fileAttributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly)
+                        statusText += "r";
+                    else
+                        statusText += "-";
 
-                if ((attributes & FileAttributes.System) == FileAttributes.System)
-                    statusText += "s";
-                else
-                    statusText += "-";
+                    if ((fileAttributes & FileAttributes.Archive) == FileAttributes.Archive)
+                        statusText += "a";
+                    else
+                        statusText += "-";
 
-                if ((attributes & FileAttributes.Hidden) == FileAttributes.Hidden)
-                    statusText += "h";
-                else
-                    statusText += "-";
+                    if ((fileAttributes & FileAttributes.System) == FileAttributes.System)
+                        statusText += "s";
+                    else
+                        statusText += "-";
+
+                    if ((fileAttributes & FileAttributes.Hidden) == FileAttributes.Hidden)
+                        statusText += "h";
+                    else
+                        statusText += "-";
+                }
+                else if (Directory.Exists(path))
+                {
+                    FileAttributes directoryAttributes = File.GetAttributes(path);
+
+                    if ((directoryAttributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly)
+                        statusText += "r";
+                    else
+                        statusText += "-";
+
+                    if ((directoryAttributes & FileAttributes.Archive) == FileAttributes.Archive)
+                        statusText += "a";
+                    else
+                        statusText += "-";
+
+                    if ((directoryAttributes & FileAttributes.System) == FileAttributes.System)
+                        statusText += "s";
+                    else
+                        statusText += "-";
+
+                    if ((directoryAttributes & FileAttributes.Hidden) == FileAttributes.Hidden)
+                        statusText += "h";
+                    else
+                        statusText += "-";
+                }
 
                 statusTextBlock.Text = statusText;
             }
@@ -219,11 +246,13 @@ namespace Platformy_Lab8
             }
         }
 
+
         private void AddMenuItem_Click(object sender, RoutedEventArgs e)
         {
             TreeViewItem selectedTreeViewItem = treeView.SelectedItem as TreeViewItem;
             string path = selectedTreeViewItem.Tag as string;
             FileNameInputWindow fileNameWindow = new FileNameInputWindow(path, selectedTreeViewItem);
+            fileNameWindow.ShowDialog();
         }
 
         private void DeleteMenuItem_Click(object sender, RoutedEventArgs e)
@@ -235,20 +264,15 @@ namespace Platformy_Lab8
 
                 try
                 {
-                    if (File.Exists(path))
-                    {
-                        File.Delete(path);
-                    }
-                    else if (Directory.Exists(path))
-                    {
-                        Directory.Delete(path, true);
-                    }
+                    // Usuń pliki i katalogi rekurencyjnie
+                    DeleteRecursive(path);
 
+                    // Usuń element z drzewa
                     if (selectedTreeViewItem.Parent is TreeViewItem parentItem)
                     {
                         parentItem.Items.Remove(selectedTreeViewItem);
                     }
-                    else 
+                    else
                     {
                         treeView.Items.Remove(selectedTreeViewItem);
                     }
@@ -259,6 +283,46 @@ namespace Platformy_Lab8
                 }
             }
         }
+
+        private void DeleteRecursive(string path)
+        {
+            if (File.Exists(path))
+            {
+                // Jeśli plik ma atrybut ReadOnly, usuń go
+                if ((File.GetAttributes(path) & FileAttributes.ReadOnly) == FileAttributes.ReadOnly)
+                {
+                    FileAttributes attributes = File.GetAttributes(path);
+                    attributes &= ~FileAttributes.ReadOnly;
+                    File.SetAttributes(path, attributes);
+                }
+                File.Delete(path);
+            }
+            else if (Directory.Exists(path))
+            {
+                // Usuń atrybut ReadOnly dla samej ścieżki
+                File.SetAttributes(path, File.GetAttributes(path) & ~FileAttributes.ReadOnly);
+
+                // Usuń pliki w katalogu
+                string[] files = Directory.GetFiles(path);
+                foreach (string file in files)
+                {
+                    DeleteRecursive(file);
+                }
+
+                // Usuń katalogi w katalogu
+                string[] subdirectories = Directory.GetDirectories(path);
+                foreach (string subdirectory in subdirectories)
+                {
+                    DeleteRecursive(subdirectory);
+                }
+
+                // Na koniec usuń sam katalog
+                Directory.Delete(path);
+            }
+        }
+
+
+
 
         private void ExitMenuItem_Click(object sender, RoutedEventArgs e)
         {

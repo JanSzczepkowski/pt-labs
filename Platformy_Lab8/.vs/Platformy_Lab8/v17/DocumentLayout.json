@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab8\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab8\\platformy_lab8\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|c:\\users\\jasie\\ideaprojects\\platformy_lab8\\platformy_lab8\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|solutionrelative:platformy_lab8\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|c:\\users\\jasie\\ideaprojects\\platformy_lab8\\platformy_lab8\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|solutionrelative:platformy_lab8\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab8\\platformy_lab8\\filenameinputwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|solutionrelative:platformy_lab8\\filenameinputwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|c:\\users\\jasie\\ideaprojects\\platformy_lab8\\platformy_lab8\\filenameinputwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab8\\platformy_lab8\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|solutionrelative:platformy_lab8\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab8\\platformy_lab8\\filenameinputwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A120892D-98ED-4047-BD1F-ADED134063B1}|Platformy_Lab8\\Platformy_Lab8.csproj|solutionrelative:platformy_lab8\\filenameinputwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -38,33 +38,30 @@
               "RelativeToolTip": "Platformy_Lab8\\FileNameInputWindow.xaml",
               "ViewState": "AQIAABQAAAAAAAAAAAAwwCQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-03T08:20:06.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T08:20:06.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "FileNameInputWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab8\\Platformy_Lab8\\FileNameInputWindow.xaml.cs",
               "RelativeDocumentMoniker": "Platformy_Lab8\\FileNameInputWindow.xaml.cs",
               "ToolTip": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab8\\Platformy_Lab8\\FileNameInputWindow.xaml.cs",
               "RelativeToolTip": "Platformy_Lab8\\FileNameInputWindow.xaml.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAwwDMAAAAkAAAA",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAwwGcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T08:17:40.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T08:17:40.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab8\\Platformy_Lab8\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Platformy_Lab8\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab8\\Platformy_Lab8\\MainWindow.xaml",
               "RelativeToolTip": "Platformy_Lab8\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-29T08:28:02.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T08:28:02.863Z"
             },
             {
               "$type": "Document",
@@ -74,7 +71,7 @@
               "RelativeDocumentMoniker": "Platformy_Lab8\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab8\\Platformy_Lab8\\MainWindow.xaml.cs",
               "RelativeToolTip": "Platformy_Lab8\\MainWindow.xaml.cs",
-              "ViewState": "AQIAANoAAAAAAAAAAAAQwOkAAABlAAAA",
+              "ViewState": "AQIAADIBAAAAAAAAAAAAwDwBAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T08:27:57.154Z",
               "EditorCaption": ""
