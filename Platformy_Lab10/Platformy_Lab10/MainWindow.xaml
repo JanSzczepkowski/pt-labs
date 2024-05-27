@@ -35,7 +35,7 @@
                     <Button Content="Reset" Height="25" VerticalAlignment="top" Width="50" Click="Reset_Click" />
                     <Button Content="Delete" Height="25" VerticalAlignment="top" Width="50" Click="Delete_Click" />
                 </ToolBar>
-                <DataGrid x:Name="CarsDataGrid" PreviewKeyDown="HandleKeyPress" CanUserAddRows="False" IsReadOnly="True">
+                <DataGrid x:Name="CarsDataGrid"  CanUserAddRows="False" IsReadOnly="False">
                     
                 </DataGrid>
             </DockPanel>

@@ -130,17 +130,6 @@ public partial class MainWindow : Window
         BindingCarList.Add(new Car(model, new Engine(displacement, horsepower, engineModel), year));
     }
 
-    public void HandleKeyPress(object sender, KeyEventArgs e)
-    {
-        if (e.Key != Key.Delete)
-        {
-            return;
-        }
-
-        List<Car> temp = BindingCarList.Where(x => x != (Car)(sender as DataGrid).SelectedItem).ToList();
-        BindingCarList = new SortableBindingList<Car>(temp);
-    }
-
     public void Delete_Click(object sender, EventArgs e)
     {
         if (CarsDataGrid.SelectedItem != null)
