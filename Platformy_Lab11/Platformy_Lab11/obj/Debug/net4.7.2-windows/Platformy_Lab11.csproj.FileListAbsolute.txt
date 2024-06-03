@@ -1,0 +1,11 @@
+C:\Users\jasie\IdeaProjects\Platformy_Lab11\Platformy_Lab11\obj\Debug\net4.7.2-windows\Platformy_Lab11.csproj.AssemblyReference.cache
+C:\Users\jasie\IdeaProjects\Platformy_Lab11\Platformy_Lab11\obj\Debug\net4.7.2-windows\MainWindow.baml
+C:\Users\jasie\IdeaProjects\Platformy_Lab11\Platformy_Lab11\obj\Debug\net4.7.2-windows\MainWindow.g.cs
+C:\Users\jasie\IdeaProjects\Platformy_Lab11\Platformy_Lab11\obj\Debug\net4.7.2-windows\App.g.cs
+C:\Users\jasie\IdeaProjects\Platformy_Lab11\Platformy_Lab11\obj\Debug\net4.7.2-windows\Platformy_Lab11_MarkupCompile.cache
+C:\Users\jasie\IdeaProjects\Platformy_Lab11\Platformy_Lab11\obj\Debug\net4.7.2-windows\Platformy_Lab11.g.resources
+C:\Users\jasie\IdeaProjects\Platformy_Lab11\Platformy_Lab11\obj\Debug\net4.7.2-windows\Platformy_Lab11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jasie\IdeaProjects\Platformy_Lab11\Platformy_Lab11\obj\Debug\net4.7.2-windows\Platformy_Lab11.AssemblyInfoInputs.cache
+C:\Users\jasie\IdeaProjects\Platformy_Lab11\Platformy_Lab11\obj\Debug\net4.7.2-windows\Platformy_Lab11.AssemblyInfo.cs
+C:\Users\jasie\IdeaProjects\Platformy_Lab11\Platformy_Lab11\obj\Debug\net4.7.2-windows\Platformy_Lab11.csproj.CoreCompileInputs.cache
+C:\Users\jasie\IdeaProjects\Platformy_Lab11\Platformy_Lab11\obj\Debug\net4.7.2-windows\Platformy_Lab11.sourcelink.json
