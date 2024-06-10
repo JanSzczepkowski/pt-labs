@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{763A6219-630C-4E5D-B095-255AB0858169}|Platformy_Lab12\\Platformy_Lab12.csproj|c:\\users\\jasie\\ideaprojects\\platformy_lab12\\platformy_lab12\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A6219-630C-4E5D-B095-255AB0858169}|Platformy_Lab12\\Platformy_Lab12.csproj|solutionrelative:platformy_lab12\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A6219-630C-4E5D-B095-255AB0858169}|Platformy_Lab12\\Platformy_Lab12.csproj|c:\\users\\jasie\\ideaprojects\\platformy_lab12\\platformy_lab12\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A6219-630C-4E5D-B095-255AB0858169}|Platformy_Lab12\\Platformy_Lab12.csproj|solutionrelative:platformy_lab12\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A6219-630C-4E5D-B095-255AB0858169}|Platformy_Lab12\\Platformy_Lab12.csproj|c:\\users\\jasie\\ideaprojects\\platformy_lab12\\platformy_lab12\\dataobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A6219-630C-4E5D-B095-255AB0858169}|Platformy_Lab12\\Platformy_Lab12.csproj|solutionrelative:platformy_lab12\\dataobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab12\\Platformy_Lab12\\Client.cs",
+              "RelativeDocumentMoniker": "Platformy_Lab12\\Client.cs",
+              "ToolTip": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab12\\Platformy_Lab12\\Client.cs",
+              "RelativeToolTip": "Platformy_Lab12\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:46:38.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab12\\Platformy_Lab12\\Server.cs",
+              "RelativeDocumentMoniker": "Platformy_Lab12\\Server.cs",
+              "ToolTip": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab12\\Platformy_Lab12\\Server.cs",
+              "RelativeToolTip": "Platformy_Lab12\\Server.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:46:18.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataObject.cs",
+              "DocumentMoniker": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab12\\Platformy_Lab12\\DataObject.cs",
+              "RelativeDocumentMoniker": "Platformy_Lab12\\DataObject.cs",
+              "ToolTip": "C:\\Users\\jasie\\IdeaProjects\\Platformy_Lab12\\Platformy_Lab12\\DataObject.cs",
+              "RelativeToolTip": "Platformy_Lab12\\DataObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:43:41.743Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

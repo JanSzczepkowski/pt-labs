@@ -1,0 +1,5 @@
+C:\Users\jasie\IdeaProjects\Platformy_Lab12\Platformy_Lab12\obj\Debug\net8.0\Platformy_Lab12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jasie\IdeaProjects\Platformy_Lab12\Platformy_Lab12\obj\Debug\net8.0\Platformy_Lab12.AssemblyInfoInputs.cache
+C:\Users\jasie\IdeaProjects\Platformy_Lab12\Platformy_Lab12\obj\Debug\net8.0\Platformy_Lab12.AssemblyInfo.cs
+C:\Users\jasie\IdeaProjects\Platformy_Lab12\Platformy_Lab12\obj\Debug\net8.0\Platformy_Lab12.csproj.CoreCompileInputs.cache
+C:\Users\jasie\IdeaProjects\Platformy_Lab12\Platformy_Lab12\obj\Debug\net8.0\Platformy_Lab12.sourcelink.json
